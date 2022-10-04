@@ -1,0 +1,80 @@
+div.caja table {
+    height: 12em;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: wheat;
+    border-collapse: collapse;
+
+}
+
+div.caja {
+    height: 40rem;
+    display: flex;
+    padding: 5% 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}
+
+figure {
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+}
+
+figure img {
+    width: 17rem;
+    height: 12rem;
+    justify-self: center;
+    border-radius: 20px;
+    border: 6px solid #20200d;
+}
+
+section {
+    padding: 2%;
+    padding-top: 0;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+table {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 8px 5px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+tr.servicios {
+    height: 30%;
+    background-color: #2e2e139c;
+}
+
+@media only screen and (min-width: 600px) {
+    section {
+        justify-content: center;
+    }
+
+    .caja {
+        justify-content: center;
+    }
+
+    .caja figure {
+        width: 120%;
+    }
+
+    .caja img {
+        width: 25rem;
+        height: 20rem;
+        align-self: flex-end;
+        transform: translateX(62%);
+    }
+}
