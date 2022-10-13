@@ -4,7 +4,7 @@ let btn_registro = document.getElementById("btn-registro");
 btn_registro.addEventListener("click", validcap);
 document.addEventListener("DOMContentLoaded", captcha)
 /*No usamos boton sumbit ya que no hay boton para solo validar el captcha y se perderia el ya generado ya que estos botones refrescan
-ala pagina si que con un boton normal validamos el captcha y si es correcto enviamos el formulario con una funcion*/ 
+a la pagina si que con un boton normal validamos el captcha y si es correcto enviamos el formulario con una funcion*/ 
 function captcha() {
     let digitos = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
@@ -30,9 +30,8 @@ function validcap() {
         document.querySelector(".preview .digitos").innerHTML = mensajes[2];//Mensaje de error por el mismo visor del captcha
         document.getElementById("resp").value = "";//Vacia el campo de texto
     } else if (captcha == texto) {
-        console.log("llegue");
         document.querySelector(".preview .digitos").innerHTML = mensajes[0];
-        document.getElementById("registro").submit();//Funcion su
+        document.getElementById("registro").submit();//Funcion sumbit
 
     } else if (captcha != texto) {
         document.querySelector(".preview .digitos").innerHTML = mensajes[1];
